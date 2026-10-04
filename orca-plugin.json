@@ -1,12 +1,13 @@
 {
   "manifestVersion": 1,
-  "id": "orca-portuguese",
-  "publisher": "stablyai",
-  "name": "Português do Brasil",
-  "version": "1.0.0",
-  "description": "Brazilian Portuguese translations for common Orca navigation.",
-  "repository": "https://github.com/stablyai/orca-portuguese",
-  "engines": { "orca": ">=1.4.0" },
+  "id": "orca-plugin-pt-br",
+  "publisher": "Danil0ws",
+  "name": "Português do Brasil (comunitário)",
+  "version": "1.4.220",
+  "description": "Pacote de idioma pt-BR para o Orca, mantido pela comunidade.",
+  "repository": "https://github.com/Danil0ws/orca-plugin-pt-br",
+  "author": { "name": "Comunidade Orca pt-BR" },
+  "engines": { "orca": ">=1.4.169" },
   "pluginApi": 1,
   "contributes": {
     "languagePacks": [{ "locale": "pt-BR", "path": "locales/pt-BR.json" }]
