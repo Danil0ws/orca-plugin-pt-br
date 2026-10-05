@@ -1,77 +1,64 @@
-# orca-portuguese
+# orca-plugin-pt-br — Português do Brasil para o Orca (comunitário)
 
-Official Brazilian Portuguese (pt-BR) language pack for [Orca](https://github.com/stablyai/orca).
+Pacote de idioma pt-BR para [Orca](https://github.com/stablyai/orca) (Stably ADE),
+fork comunitário do [stablyai/orca-portuguese](https://github.com/stablyai/orca-portuguese)
+com pipeline de contribuição paralela, glossário verificado e validação automática.
+_Community pt-BR language pack for the Orca agent IDE — MIT._
 
-## Status
+Funciona com o mecanismo nativo `contributes.languagePacks`: nada é patcheado
+na aplicação; chaves sem tradução caem em inglês (fallback do i18next).
 
-The catalog contains **12,524 strings**, covering settings, sidebars, editor,
-terminal, GitHub/GitLab/Linear/Jira integrations, onboarding, mobile companion
-app, dashboard, system tray, and application menu.
+**Compatível com Orca ≥ 1.4.169 · catálogo da tag v1.4.220 (ver `ORCA_VERSION`) ·
+cobertura atual: 12.685/15.007 (84%)**
 
-Missing translations fall back to Orca's English catalog automatically.
-Coverage varies with the Orca version as new UI strings are added. Inline CSS
-is omitted so the app uses its complete built-in styles.
+## Instalação
 
-## Installation
+**1) Git URL** — Settings → Plugins → Install plugin → Git URL (`#ref` obrigatório):
 
-Orca discovers language packs through its plugin system. Point Orca at this
-repository (or a local checkout) as a plugin source, then select
-**pt-BR — orca-portuguese** from Settings → Appearance → Language.
+```
+https://github.com/Danil0ws/orca-plugin-pt-br.git#v1.4.220
+```
 
-## How this pack was built
+**2) Desenvolvimento local:**
 
-The English source (`en.json` from `stablyai/orca`,
-`src/renderer/src/i18n/locales/en.json`) was extracted, split into batches by
-UI namespace, and translated with an LLM-assisted, multi-pass process:
+```
+git clone https://github.com/Danil0ws/orca-plugin-pt-br.git ~/orca-plugin-pt-br
+```
 
-1. Flatten the English catalog into `path -> string` pairs, excluding keys
-   under the plugin-protected namespace (`auto.components.settings.plugin*`,
-   enforced by Orca's own plugin artifact parser) and a handful of entries
-   that are actually inline CSS for animated marketing visuals, not
-   translatable prose.
-2. Translate in batches grouped by component/namespace, with a shared
-   style guide (informal `você` register, placeholders preserved verbatim,
-   brand names and established Brazilian dev-tooling English loanwords —
-   `branch`, `commit`, `worktree`, `workspace`, `pull request`, etc. — kept
-   untranslated, consistent with how GitHub/GitLab/VS Code are localized for
-   pt-BR).
-3. Cross-batch consistency pass: reconciled terminology that drifted between
-   independently translated batches (e.g. "Checks" vs "Verificações" vs
-   "Checagens" for the GitHub PR checks tab; "Mergeado" vs "Mesclado" for the
-   merged-PR/MR status badge — both normalized to match GitHub's own official
-   pt-BR localization).
-4. Validated against the same rules Orca's plugin loader enforces at runtime
-   (`parsePluginLanguagePackArtifact`): max 20,000 entries, max depth 16, no
-   dangerous/unsafe keys, no protected paths, no string over 8,192 chars.
+Settings → Plugins → Development → Add path → caminho clonado.
+Depois: Settings → Appearance → Language → **Português do Brasil (comunitário)**.
 
-Every translated string was reviewed for the rules above; no string was left
-identical to English except where that is the correct choice (brand names,
-technical loanwords, code/CLI literals, keyboard shortcuts).
+## Estrutura
 
-## Known limitations
+```
+orca-plugin.json      manifesto (id orca-plugin-pt-br, engines >=1.4.169)
+ORCA_VERSION          versão da Orca de onde veio o en.json (1.4.220)
+COMPAT                menor versão suportada (1.4.169)
+GLOSSARY.md           contrato de terminologia EN × pt-BR
+UNTRANSLATED.md       por que algo ficou em inglês + dívidas abertas
+locales/pt-BR.json    catálogo GERADO — não edite à mão
+tools/
+  extract.py          baixa en.json da tag + lista da zona protegida
+  build.py            monta o catálogo dos dicionários + valida
+  test_build.py       9 casos de regressão (rode antes do PR)
+  lanes.json          15 lanes = 15 arquivos de dicionário = 15 PRs em paralelo
+  glossary.json       espelho verificável do GLOSSARY.md (warnings no build)
+  dict/*.json         FONTE DA VERDADE: pares "en" → "pt-BR" por lane
+```
 
-A few upstream i18n design constraints can't be fixed from the translation
-side alone — flagging them here for visibility:
+## Contribuir
 
-- **Positional placeholder pluralization**: some English strings compose a
-  sentence from an English verb/noun injected via a positional placeholder
-  (e.g. `"{{value0}} PR #{{value1}}?"` where `{{value0}}` is `close`/`reopen`
-  in English, or `"session{{value1}}"` for English pluralization). Since
-  Portuguese conjugates verbs and pluralizes nouns differently than English,
-  these can't be made fully grammatically correct without named,
-  language-aware placeholders upstream. The translations preserve the
-  placeholders and produce the closest natural phrasing possible.
-- **`auto.components.status.bar.WorkspaceSpaceManagerPanel.5c6d25720c`** has
-  no pt-BR translation yet; it falls back to English automatically per
-  Orca's sparse-catalog policy.
-- A small number of ambiguous product-specific terms (e.g. "Conductor",
-  "Space" as used in `WorkspaceSpacePage`/`WorkspaceSpaceCompactPanel`) were
-  kept in English pending confirmation from the Orca team on whether they are
-  intentional feature/brand names or generic words that should be
-  translated.
+Veja [CONTRIBUTING.md](CONTRIBUTING.md). Resumo:
 
-## Contributing
+```bash
+python3 tools/build.py --pending <lane>   # o que falta na sua lane
+# traduza em tools/dict/<lane>.json (1 PR = 1 lane), seguindo GLOSSARY.md
+python3 tools/test_build.py && python3 tools/build.py   # verde = pronto
+```
 
-Corrections and improvements welcome — please open a PR against
-`locales/pt-BR.json`, keeping the existing key structure and the style
-conventions above.
+## Origem e licença
+
+MIT. A tradução base veio de `stablyai/orca-portuguese` (12.524 strings);
+originais em inglês © Stably AI (Orca, MIT); tooling derivado de
+[imgusev/orca-plugin-ru](https://github.com/imgusev/orca-plugin-ru) (MIT).
+Projeto não afiliado à Stably AI.
