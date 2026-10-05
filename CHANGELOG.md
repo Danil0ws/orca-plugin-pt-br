@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.0 — 2026-10-05
+
+- Primeira versão pública do plugin comunitário, alinhada ao
+  `version` do `orca-plugin.json`.
+- Tag `1.0.0` (e `v1.0.0`) apontando para o conteúdo real do pack:
+  antes a tag `v1.0.0` era o stub do fork (2 arquivos, 863 B).
+- Instalação pinada: `https://github.com/Danil0ws/orca-plugin-pt-br.git#1.0.0`.
+
 ## 1.4.220 — 2026-10-04
 
 - Fork comunitário do stablyai/orca-portuguese: novo id `orca-plugin-pt-br`,
