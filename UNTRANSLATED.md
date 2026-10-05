@@ -13,10 +13,10 @@ Política + relatório. Categorias:
    rejeitaria o pacote inteiro.
 4. **Termos consagrados** — ver `GLOSSARY.md`.
 
-**Dívidas ≠ decisões:** strings sem tradução ainda são dívidas —
-`python3 tools/build.py` mostra o total e
-`python3 tools/build.py --pending <lane>` lista as pendências por lane.
+**Dívidas ≠ decisões:** não há dívidas abertas — `python3 tools/build.py`
+mostra `sem tradução: 0` e o `--pending <lane>` de cada lane vem vazio.
+`python3 tools/build.py --pending <lane>` continua sendo o teste de uma lane.
 
-**Avisos conhecidos:** 25 strings herdadas do upstream mantêm o sufixo
-plural inglês (`reaction{{value1}}`) — o build avisa (`sufixos de plural
-mantidos`); correção em issue aberta `[orca-ptbr]`.
+**Avisos conhecidos:** nenhum. Os 25 sufixos plurais herdados do upstream
+(`reaction{{value1}}`) foram corrigidos; o build reporta `mantidos (deve
+ser 0)` = 0.

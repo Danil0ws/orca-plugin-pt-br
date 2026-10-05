@@ -3,7 +3,7 @@
   "id": "pt-br",
   "publisher": "danil0ws",
   "name": "Português do Brasil",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pacote de idioma pt-BR para o Orca, mantido pela comunidade.",
   "repository": "https://github.com/Danil0ws/orca-plugin-pt-br",
   "engines": { "orca": ">=1.4.169" },

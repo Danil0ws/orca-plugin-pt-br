@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.0.3 — 2026-10-05
+
+- **Lane `system` zerada** (a última): 539 pares novos → dict 536 → 1075.
+  - `sem tradução: 0` · `pendências por lane:` vazio · cobertura
+    **14.825/15.007 (98%)**.
+  - Gate: `test_build.py` 10 casos OK · divergências de placeholder: 0 ·
+    avisos de glossário: 0 · `sufixos de plural: 26 descartados · 0
+    mantidos`.
+  - `precheck_pairs.py` nos 539 pares novos: cobertura, placeholders,
+    glossário, colisões entre lanes e formato do dict — 0 problemas.
+- `UNTRANSLATED.md`: dívidas abertas e avisos conhecidos encerrados.
+- `version` 1.0.2 → 1.0.3; `locales/pt-BR.json` regenerado; instalação
+  pinada em `#1.0.3`.
+
 ## 1.0.2 — 2026-10-05
 
 - **Backlog de terminologia zerado**: 36 pares corrigidos em 12 dicionários.
