@@ -134,7 +134,7 @@
  "Remote unavailable": "Remoto indisponível",
  "Remove {{name}}": "Remover {{name}}",
  "Removed workspaces: {{value0}}": "Workspaces removidos: {{value0}}",
- "Removed {{value0}} workspace{{value1}}": "workspace {{value0}} removido{{value1}}",
+ "Removed {{value0}} workspace{{value1}}": "workspace {{value0}} removido",
  "Removing {{value0}} is taking longer than expected. It will keep running in the background.": "Remover {{value0}} está demorando mais do que o esperado. A operação continuará em segundo plano.",
  "Renderer UI": "Renderer UI",
  "Repository root": "Raiz do repositório",
@@ -208,7 +208,7 @@
  "src/renderer packages/ui": "src/renderer packages/ui",
  "to delete": "para excluir",
  "yaml": "yaml",
- "{{value0}} workspace{{value1}} could not be removed": "Não foi possível remover {{value0}} workspace{{value1}}",
+ "{{value0}} workspace{{value1}} could not be removed": "Não foi possível remover {{value0}} workspace",
  "{{value0}}, {{value1}} failed": "{{value0}}, {{value1}} com falha",
  "{{value0}}/{{value1}} deleted": "{{value0}}/{{value1}} excluídos",
  "{{value0}}/{{value1}} {{value2}} scanned": "{{value0}}/{{value1}} {{value2}} verificados"

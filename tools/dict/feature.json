@@ -435,7 +435,7 @@
  "worktree": "worktree",
  "worktrees": "worktrees",
  "{{value0}} unsupported": "{{value0}} sem suporte",
- "{{value0}} workspace{{value1}} linked. Add another workspace or replace a restricted key any time.": "{{value0}} workspace{{value1}} vinculado. Adicione outro workspace ou substitua uma chave restrita quando quiser.",
+ "{{value0}} workspace{{value1}} linked. Add another workspace or replace a restricted key any time.": "{{value0}} workspace vinculado. Adicione outro workspace ou substitua uma chave restrita quando quiser.",
  "“Split this PR into two": "“Divida este PR em dois",
  "“When the agent in": "“Quando o agente em",
  "› can sign in": "› consegue fazer login",
