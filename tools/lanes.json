@@ -1,0 +1,17 @@
+[
+  { "name": "chrome", "prefixes": ["app.", "sidebar.", "menu.", "tray.", "common.", "notifications."] },
+  { "name": "settings", "prefixes": ["settings.", "auto.components.settings."] },
+  { "name": "integrations", "prefixes": ["githubChecks.", "checksPanel.", "auto.components.github", "auto.components.GitHub", "auto.components.PullRequestPage.", "auto.components.gitlab", "auto.components.GitLab", "auto.components.linear", "auto.components.Linear", "auto.components.jira", "auto.components.Jira"] },
+  { "name": "editor", "prefixes": ["editor.", "sourceControl.", "quickOpen.", "worktreeJumpPalette.", "auto.components.editor.", "auto.components.diff."] },
+  { "name": "terminal-sessions", "prefixes": ["terminal.", "fileExplorer.", "sessionSearch.", "sessionHistory.", "auto.components.terminal", "auto.components.Terminal", "auto.components.cmd."] },
+  { "name": "layout-right", "prefixes": ["auto.components.right.", "auto.components.rightSidebar.", "auto.components.status.", "auto.components.tab."] },
+  { "name": "layout-sidebar", "prefixes": ["auto.components.sidebar.", "auto.components.new.", "auto.components.shared.", "auto.components.floating.", "auto.components.contextual."] },
+  { "name": "feature", "prefixes": ["featureTips.", "agentsSidebarIntro.", "auto.components.feature.", "auto.components.onboarding.", "auto.components.Landing.", "auto.components.FirstLaunchBanner."] },
+  { "name": "skills-tasks", "prefixes": ["auto.components.skills.", "auto.components.automations.", "auto.components.TaskPage.", "auto.components.task", "auto.components.agent."] },
+  { "name": "workspace", "prefixes": ["sparsePreset.", "auto.components.workspace.", "auto.components.worktree", "auto.components.sparse", "auto.components.NewWorkspace", "auto.components.ComposerParentWorktreePicker."] },
+  { "name": "browser", "prefixes": ["browser.", "auto.components.browser", "auto.components.Browser", "auto.components.emulator."] },
+  { "name": "mobile", "prefixes": ["auto.components.mobile.", "auto.components.native", "auto.components.dictation.", "auto.components.pet."] },
+  { "name": "runtime-lib", "prefixes": ["auto.lib.", "auto.hooks.", "auto.store.", "auto.web.", "auto.App.", "auto.runtime.", "auto.main.", "auto.i18n.", "auto.ssh."] },
+  { "name": "dashboard", "prefixes": ["dashboard", "runtimeRpc.", "auto.components.dashboard."] },
+  { "name": "system", "prefixes": [""] }
+]

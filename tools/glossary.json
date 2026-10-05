@@ -1,0 +1,10 @@
+{
+  "_comment": "Espelho de GLOSSARY.md — verificado por tools/build.py (warnings)",
+  "verbatim": ["worktree", "branch", "commit", "rebase", "checkout", "diff", "skill", "workspace", "tooling"],
+  "banned": {
+    "worktree": ["árvore de trabalho", "arvore de trabalho"],
+    "tooling": ["ferramentar", "ferramentamento", "ferramentário"],
+    "stash": ["esconderijo"],
+    "skill": ["habilidade"]
+  }
+}
