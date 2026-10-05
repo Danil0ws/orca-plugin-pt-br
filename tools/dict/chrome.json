@@ -1,9 +1,11 @@
 {
+ "Adjust filters and reveal": "Ajustar filtros e revelar",
  "Check for Updates...": "Verificar atualizações...",
  "Exit": "Sair",
  "Explore Orca": "Explorar o Orca",
  "Force Reload": "Forçar recarregamento",
  "Getting Started with Orca": "Primeiros passos com o Orca",
+ "Keep filters": "Manter filtros",
  "Open Orca": "Abrir o Orca",
  "Open Worktree Palette": "Abrir paleta de worktrees",
  "Orca - activity waiting": "Orca - atividade aguardando",
@@ -14,12 +16,18 @@
  "Report Crash...": "Reportar falha...",
  "Reset Size": "Redefinir tamanho",
  "Retry the web client or reconnect to the paired runtime.": "Tente novamente no cliente web ou reconecte ao runtime pareado.",
+ "Reveal hidden workspace?": "Revelar workspace oculto?",
  "Show Status Bar": "Mostrar barra de status",
  "Show Titlebar App Name": "Mostrar nome do app na barra de título",
+ "The active workspace is hidden in the sidebar. Revealing it will adjust only the filters hiding it.": "O workspace ativo está oculto na barra lateral. Revelá-lo vai ajustar somente os filtros que o ocultam.",
  "The app shell could not finish rendering. Retry to remount it, or relaunch Orca if the error persists.": "O shell do app não conseguiu terminar de renderizar. Tente novamente para remontá-lo, ou reinicie o Orca se o erro persistir.",
  "Toggle Left Sidebar": "Alternar barra lateral esquerda",
  "Toggle Right Sidebar": "Alternar barra lateral direita",
  "Zoom In": "Aumentar zoom",
  "Zoom Out": "Diminuir zoom",
- "activity waiting": "atividade aguardando"
+ "activity waiting": "atividade aguardando",
+ "failed": "falhou",
+ "finished": "concluído",
+ "needs input": "aguardando entrada",
+ "stopped": "parado"
 }
