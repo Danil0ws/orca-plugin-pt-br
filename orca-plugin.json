@@ -6,7 +6,6 @@
   "version": "1.0.0",
   "description": "Pacote de idioma pt-BR para o Orca, mantido pela comunidade.",
   "repository": "https://github.com/Danil0ws/orca-plugin-pt-br",
-  "author": { "name": "Comunidade Orca pt-BR" },
   "engines": { "orca": ">=1.4.169" },
   "pluginApi": 1,
   "contributes": {
