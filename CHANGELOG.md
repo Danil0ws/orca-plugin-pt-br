@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.0.1 — 2026-10-05
+
+- **Manifesto corrigido** (a 1.0.0 era recusada pela Orca):
+  - `publisher`: `Danil0ws` → `danil0ws`. O schema exige kebab-case
+    (`^[a-z0-9]+(?:-[a-z0-9]+)*$`) — o erro era
+    `publisher: must be kebab-case (a-z, 0-9, dashes) and not a reserved name`.
+  - `id`: `orca-plugin-pt-br` → `pt-br`. Identidade com prefixo `orca-` é
+    reservada à stablyai: instalando por Git de outro dono a Orca recusa com
+    `reserved plugin identity … must resolve to the stablyai organization`
+    (mesma regra do `noobitoo.russian`). Chave instalada: **`danil0ws.pt-br`**.
+- `version` 1.0.0 → 1.0.1; instalação pinada em `#1.0.1`.
+- `tools/test_build.py`: 10º caso valida o manifesto no gate (kebab-case de
+  `id`/`publisher`, prefixo reservado, locale) para não regredir.
+- Catálogo inalterado: `locales/pt-BR.json` passa no
+  `validatePluginLanguagePackCatalog` da Orca 1.4.220.
+
 ## 1.0.0 — 2026-10-05
 
 - Primeira versão pública do plugin comunitário, alinhada ao

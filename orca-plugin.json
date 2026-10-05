@@ -1,9 +1,9 @@
 {
   "manifestVersion": 1,
-  "id": "orca-plugin-pt-br",
-  "publisher": "Danil0ws",
+  "id": "pt-br",
+  "publisher": "danil0ws",
   "name": "Português do Brasil",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pacote de idioma pt-BR para o Orca, mantido pela comunidade.",
   "repository": "https://github.com/Danil0ws/orca-plugin-pt-br",
   "engines": { "orca": ">=1.4.169" },

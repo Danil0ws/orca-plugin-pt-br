@@ -16,7 +16,7 @@ cobertura atual: 14.272/15.007 (95%)**
 **1) Git URL** — Settings → Plugins → Install plugin → Git URL (`#ref` obrigatório):
 
 ```
-https://github.com/Danil0ws/orca-plugin-pt-br.git#1.0.0
+https://github.com/Danil0ws/orca-plugin-pt-br.git#1.0.1
 ```
 
 **2) Desenvolvimento local:**
@@ -26,12 +26,12 @@ git clone https://github.com/Danil0ws/orca-plugin-pt-br.git ~/orca-plugin-pt-br
 ```
 
 Settings → Plugins → Development → Add path → caminho clonado.
-Depois: Settings → Appearance → Language → **Português do Brasil (comunitário)**.
+Depois: Settings → Appearance → Language → **Português do Brasil**.
 
 ## Estrutura
 
 ```
-orca-plugin.json      manifesto (id orca-plugin-pt-br, engines >=1.4.169)
+orca-plugin.json      manifesto (id pt-br + publisher danil0ws = chave danil0ws.pt-br, engines >=1.4.169)
 ORCA_VERSION          versão da Orca de onde veio o en.json (1.4.220)
 COMPAT                menor versão suportada (1.4.169)
 GLOSSARY.md           contrato de terminologia EN × pt-BR

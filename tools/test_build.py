@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Testes do build: fixtures mínimas em tmpdir, subprocess. Rode: python3 tools/test_build.py"""
-import json, os, pathlib, shutil, subprocess, sys, tempfile
+import json, os, pathlib, re, shutil, subprocess, sys, tempfile
 
 HERE = pathlib.Path(__file__).resolve().parent
 BUILD = HERE / "build.py"
@@ -87,4 +87,16 @@ d, r = case("pend", {"m.json": {}})
 r = run(d, "--pending", "m")
 assert r.returncode == 0 and "menu.commit" in r.stdout, r.stdout
 
-print("test_build: 9 casos OK")
+# 9. manifesto do repo: id/publisher kebab-case, id sem prefixo reservado "orca-"
+mf = json.load(open(HERE.parent / "orca-plugin.json"))
+kebab = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*\Z")
+for field in ("id", "publisher"):
+    assert kebab.match(mf[field]), f"{field} deve ser kebab-case: {mf[field]!r}"
+assert not mf["id"].startswith("orca-"), "prefixo 'orca-' é reservado à stablyai"
+assert mf["manifestVersion"] == 1 and mf["pluginApi"] == 1
+assert re.fullmatch(r">=\d+\.\d+\.\d+", mf["engines"]["orca"]), mf["engines"]
+assert re.fullmatch(r"[A-Za-z]{2,3}(?:-[A-Za-z0-9]{2,8})*",
+                    mf["contributes"]["languagePacks"][0]["locale"])
+assert (HERE.parent / "locales" / "pt-BR.json").exists()
+
+print("test_build: 10 casos OK")
