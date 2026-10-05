@@ -9,14 +9,14 @@ Funciona com o mecanismo nativo `contributes.languagePacks`: nada é patcheado
 na aplicação; chaves sem tradução caem em inglês (fallback do i18next).
 
 **Compatível com Orca ≥ 1.4.169 · catálogo da tag v1.4.220 (ver `ORCA_VERSION`) ·
-cobertura atual: 12.685/15.007 (84%)**
+cobertura atual: 14.272/15.007 (95%)**
 
 ## Instalação
 
 **1) Git URL** — Settings → Plugins → Install plugin → Git URL (`#ref` obrigatório):
 
 ```
-https://github.com/Danil0ws/orca-plugin-pt-br.git#v1.0.0
+https://github.com/Danil0ws/orca-plugin-pt-br.git#1.0.0
 ```
 
 **2) Desenvolvimento local:**

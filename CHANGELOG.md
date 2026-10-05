@@ -7,6 +7,10 @@
 - Tag `1.0.0` (e `v1.0.0`) apontando para o conteúdo real do pack:
   antes a tag `v1.0.0` era o stub do fork (2 arquivos, 863 B).
 - Instalação pinada: `https://github.com/Danil0ws/orca-plugin-pt-br.git#1.0.0`.
+- Lane `runtime-lib` zerada: 66 pares novos (macOS/permissões, cookies do
+  navegador, arquivos soltos/arrastados, `auto.store.*`) → cobertura
+  **14272/15007 (95%)**, `sem tradução: 539`, pendências só em `system=553`.
+  Placeholders: 0 divergências · avisos de glossário inalterados (14).
 
 ## 1.4.220 — 2026-10-04
 

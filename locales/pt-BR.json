@@ -469,7 +469,9 @@
       "changedSinceConfirmation": "O workspace mudou depois da confirmação. Atualize para revisar antes de remover.",
       "hostCollision": "Erro: este workspace existe em múltiplos hosts no mesmo caminho",
       "hostUnresolved": "O Orca não consegue determinar qual host possui este workspace. Atualize os projetos e revise novamente.",
-      "gitStatusUnavailable": "O Orca não conseguiu verificar o status git deste workspace. Tente novamente ou remova-o da barra lateral ou lista de projetos do host."
+      "gitStatusUnavailable": "O Orca não conseguiu verificar o status git deste workspace. Tente novamente ou remova-o da barra lateral ou lista de projetos do host.",
+      "gitStatusUnavailableOlderPeer": "O Orca não conseguiu associar esta falha de git status a um host. Atualize o peer conectado mais antigo ou exclua o workspace da barra lateral ou da lista de projetos específica do host.",
+      "forceNeedsApproval": "Revise e confirme este workspace antes de excluí-lo à força."
      }
     },
     "worktrees": {
@@ -502,7 +504,26 @@
      "81f13f48d2": "O Git não conseguiu excluir a branch \"{{value0}}\" com segurança depois de excluir o worktree \"{{value1}}\", então o Orca a manteve para evitar perder commits locais.",
      "runtimeScopeForbiddenTitle": "Essa conexão tem acesso limitado (mobile)",
      "runtimeScopeForbiddenDescription": "Workspaces não estão disponíveis em um pareamento com escopo mobile. Reconecte usando o link de acesso via navegador em Configurações → Ambientes de Runtime → Compartilhar este servidor Orca.",
-     "a17f4d2e93": "Não foi possível atualizar este workspace."
+     "a17f4d2e93": "Não foi possível atualizar este workspace.",
+     "preservedBranchCleanupHostAmbiguous": "Várias limpezas de branch preservado estão pendentes para \"{{value0}}\"; especifique o host.",
+     "metadata": {
+      "worktree": {
+       "meta": {
+        "persist": {
+         "877e3638d8": "Atualize o runtime remoto para alterar a issue vinculada deste workspace",
+         "4367540861": "Atualize o runtime remoto para vincular issues do Linear",
+         "github": {
+          "pr": {
+           "suppression": "Atualize o runtime remoto para desvincular pull requests do GitHub"
+          }
+         }
+        }
+       }
+      }
+     },
+     "createdWithoutParentNesting": "Criado sem aninhamento sob \"{{value0}}\"",
+     "createdWithoutParentNestingUnnamed": "Criado sem aninhamento sob o pai selecionado",
+     "createdWithoutParentNestingDetail": "O workspace pai não estava mais disponível. Você pode defini-lo no menu do workspace."
     },
     "repos": {
      "2975400634": "Atualize o servidor Orca para abrir pastas que não são Git nesse runtime.",
@@ -517,7 +538,9 @@
      "15cf5319ec": "{{path}} foi verificado em {{hostName}}, mas esse host não retornou uma pasta utilizável.",
      "2dcd706774": "O projeto também existe em outro perfil",
      "presenceProfileOverflow": "{{names}} +{{count}} mais",
-     "removeProjectFailed": "Falha ao remover o projeto"
+     "removeProjectFailed": "Falha ao remover o projeto",
+     "wslFilesystemBoundaryTitle": "Este projeto está armazenado em uma unidade do Windows",
+     "wslFilesystemBoundaryDescription": "O git deste projeto roda em {{distro}}, que acessa unidades do Windows pela ponte de sistema de arquivos do WSL. Espere um git cerca de 20x mais lento do que seria em uma cópia armazenada dentro de {{distro}}."
     },
     "settings": {
      "e12dab333b": "Falha ao trocar de servidor",
@@ -584,6 +607,7 @@
      "9e2a9bb87b": "Continue",
      "6f8056a565": "Command Code",
      "4238b771b5": "Codebuff",
+     "freebuff_label": "Freebuff",
      "cbaf0c2e0b": "Cline",
      "1f8a19e9ad": "Autohand Code",
      "5e8eff11b3": "Auggie",
@@ -607,8 +631,14 @@
      "fc80296033": "Devin",
      "da41abbdd4": "Ante",
      "060d152fb5": "Trae",
+     "muse_label": "Muse",
+     "dsh_label": "DeepSeek Harness",
+     "qoder_label": "Qoder CLI",
+     "zcode_label": "ZCode",
      "d443a47995": "Agente Principal",
-     "mimo_code_label": "MiMo Code"
+     "mimo_code_label": "MiMo Code",
+     "opencode2_label": "OpenCode 2",
+     "codebuddy_label": "CodeBuddy"
     },
     "skill": {
      "cli": {
@@ -847,6 +877,15 @@
     },
     "activation": {
      "cannotOpenFolderWorkspace": "Não é possível abrir o workspace da pasta"
+    },
+    "creation": {
+     "flow": {
+      "structured": {
+       "launch": {
+        "unknown": "Não foi possível confirmar se o chat {{value0}} foi aberto. Tente novamente para verificar."
+       }
+      }
+     }
     }
    },
    "folderWorkspacePathStatus": {
@@ -941,7 +980,21 @@
      "import": {
       "toast": {
        "restartFallbackUnavailableNone": "Nenhum dos {{value0}} cookies pôde ser carregado, e o fallback de reinício não estava disponível. Os cookies anteriores deste perfil foram substituídos. Tente importar novamente.",
-       "restartFallbackUnavailablePartial": "Foram importados {{value0}} de {{value1}} cookies. O restante não pôde ser carregado, e o fallback de reinício não estava disponível. Tente importar novamente."
+       "restartFallbackUnavailablePartial": "Foram importados {{value0}} de {{value1}} cookies. O restante não pôde ser carregado, e o fallback de reinício não estava disponível. Tente importar novamente.",
+       "googleCookiesSkipped": "Os cookies do Google não foram importados. Abra um navegador no Orca em {{value0}} com este perfil e entre no Google.",
+       "undecryptableAppBound": "O Orca não consegue descriptografar {{value0}} dos cookies deste navegador porque eles usam criptografia vinculada ao app. Você pode importar cookies de um arquivo usando “Do arquivo…”.",
+       "undecryptableAppBoundMixed": "O Orca não consegue descriptografar {{value0}} dos cookies deste navegador porque eles usam criptografia vinculada ao app; mais {{value1}} não puderam ser descriptografados por outro motivo. Você pode importar cookies de um arquivo usando “Do arquivo…”.",
+       "undecryptableKeyring": "{{value0}} cookies não puderam ser descriptografados porque o keyring do sistema estava indisponível. Desbloqueie seu keyring de login (ou instale um provedor de Secret Service, como o gnome-keyring) e importe novamente.",
+       "undecryptableKeyringMixed": "{{value0}} cookies não puderam ser descriptografados porque o keyring do sistema estava indisponível; mais {{value1}} não puderam ser descriptografados por outro motivo. Desbloqueie seu keyring de login (ou instale um provedor de Secret Service, como o gnome-keyring) e importe novamente.",
+       "undecryptableUnknown": "{{value0}} cookies não puderam ser descriptografados e foram ignorados. Feche o navegador de origem por completo e tente importar novamente.",
+       "unrecognizedWarning": "A importação de cookies terminou com um aviso que esta versão do Orca não reconhece. Atualize o Orca para ver os detalhes e verifique este perfil antes de confiar nos cookies dele.",
+       "undecryptableUnrecognizedReason": "{{value0}} cookies não puderam ser descriptografados e foram ignorados por um motivo que esta versão do Orca não reconhece. Atualize o Orca para ver os detalhes e tente importar novamente.",
+       "partitionSkipped": "{{value0}} cookies não foram importados porque a partição de site deles não pôde ser lida. Entre nesses sites novamente no Orca.",
+       "locationClientHosted": "Lidos deste dispositivo e armazenados aqui para o workspace {{value0}}.",
+       "locationRemoteHost": "Lidos dos navegadores em {{value0}} e armazenados lá.",
+       "googleCookiesSkippedLocal": "Os cookies do Google não foram importados. Abra um navegador no Orca com este perfil e entre no Google.",
+       "googleCookiesSkippedClientHosted": "Os cookies do Google não foram importados. Abra uma aba do navegador no workspace {{value0}} com este perfil — ela abre neste dispositivo — e entre no Google.",
+       "googleCookiesSkippedRemoteWorkspace": "Os cookies do Google não foram importados. Abra uma aba do navegador no workspace {{value0}} com este perfil e entre no Google."
       }
      }
     }
@@ -957,11 +1010,48 @@
       "empty": "{{fileName}} está vazio.",
       "tooLarge": "{{fileName}} é maior que {{maxSize}}.",
       "tooMany": "Você pode anexar até {{maxCount}} imagens.",
+      "totalTooLarge": "{{fileName}} deixaria os anexos acima de {{maxSize}} no total.",
       "dimensionsTooLarge": "{{fileName}} tem dimensões grandes demais para pré-visualizar com segurança.",
       "invalidImage": "{{fileName}} não é uma imagem válida suportada.",
       "additionalErrors": "{{count}} imagens adicionais não puderam ser anexadas."
      }
     }
+   },
+   "activateAiVaultStructuredSession": {
+    "unavailable": "A sessão de agente estruturada ainda não está disponível. Tente novamente em instantes.",
+    "gone": "Este chat não está mais neste host, então não pode ser reaberto aqui.",
+    "hostCannotOpen": "Este chat não pode ser reaberto até o Orca ser atualizado."
+   },
+   "ephemeralVmWorktreeCreation": {
+    "sparseCheckoutUnsupported": "Receitas de root provisionado não suportam sparse checkout."
+   },
+   "worktreeJumpNavigation": {
+    "filteredNotice": "Este worktree está oculto pelos filtros da barra lateral. O workspace foi aberto, mas não aparece em Spaces."
+   },
+   "file": {
+    "preview": {
+     "pairedOutsideWorktree": "Arquivos fora do workspace ainda não podem ser pré-visualizados em um servidor pareado."
+    }
+   },
+   "clipboardWriteFailure": {
+    "tooLarge": "O texto é grande demais para copiar."
+   },
+   "dropSkipReason": {
+    "missing": "Não está mais no caminho original.",
+    "symlink": "Links simbólicos não podem ser anexados.",
+    "permissionDenied": "Permissão negada.",
+    "unsupported": "Tipo de arquivo não suportado."
+   },
+   "dropTempCopyFailure": {
+    "changed": "O arquivo mudou enquanto o Orca o copiava. Tente soltar novamente.",
+    "outOfSpace": "Espaço em disco insuficiente para copiar os arquivos soltos.",
+    "storageUnavailable": "O Orca não conseguiu criar o armazenamento para arquivos soltos.",
+    "storageNotPrivate": "O armazenamento do Orca para arquivos soltos pode ser lido por outros usuários, então nada foi copiado.",
+    "timedOut": "A cópia demorou demais. Tente soltar novamente.",
+    "busy": "Muitos arquivos soltos ainda estão sendo copiados. Aguarde um instante e tente novamente.",
+    "tooLarge": "Grande demais para copiar, então o Orca não conseguiu entregá-lo ao agente.",
+    "storageFull": "O armazenamento do Orca para arquivos soltos está cheio, então o Orca não conseguiu entregá-los ao agente.",
+    "generic": "Tente soltar novamente."
    }
   },
   "hooks": {
@@ -981,7 +1071,10 @@
     "folderWorkspaceCreateFailedTitle": "Falha ao criar workspace de pasta",
     "folderWorkspaceCreateFailedMessage": "Não foi possível criar o workspace de pasta. Verifique os detalhes do erro acima e tente novamente.",
     "setupAgentStartupPolicySaveFailed": "Falha ao salvar o comportamento de inicialização da configuração.",
-    "5f3d2c8a1b": "Falha ao resolver a base do MR."
+    "5f3d2c8a1b": "Falha ao resolver a base do MR.",
+    "dropPartiallyAttached": "{{failureCount}} de {{count}} itens não puderam ser anexados.",
+    "dropPartiallyAttached_one": "{{failureCount}} de {{count}} item não pôde ser anexado.",
+    "dropPartiallyAttached_other": "{{failureCount}} de {{count}} itens não puderam ser anexados."
    },
    "useGlobalFileDrop": {
     "38c9f034ff": "Falha ao enviar os arquivos soltos.",
@@ -991,7 +1084,12 @@
     "nativeDropTooManyPaths": "A soltura contém arquivos demais.",
     "nativeDropPathsTooLargeDescription": "Solte menos arquivos ou use uma lista de caminhos mais curta.",
     "nativeDropPathsTooLarge": "A lista de caminhos da soltura é grande demais.",
-    "ownerChanged": "Não foi possível verificar qual host é dono deste workspace. Tente novamente depois que ele reconectar."
+    "ownerChanged": "Não foi possível verificar qual host é dono deste workspace. Tente novamente depois que ele reconectar.",
+    "nativeDropUnresolvedPathsDescription": "Salve-os no disco primeiro e depois solte os arquivos salvos.",
+    "nativeDropUnresolvedPaths": "O Orca não conseguiu ler um caminho para os arquivos soltos.",
+    "nativeDropTempCopyFailed": "O Orca não conseguiu copiar {{count}} arquivos soltos.",
+    "nativeDropTempCopyFailed_one": "O Orca não conseguiu copiar {{count}} arquivo solto.",
+    "nativeDropTempCopyFailed_other": "O Orca não conseguiu copiar {{count}} arquivos soltos."
    },
    "useIpcEvents": {
     "0e3cf53060": "Aba do navegador {{value0}} não encontrada",
@@ -1115,9 +1213,31 @@
     "dismiss": "Não mostrar novamente"
    },
    "useMacTccAttributionSeveredNotice": {
+    "title": "As permissões do macOS podem não alcançar os terminais do Orca",
+    "description": "Os terminais em execução do Orca são hospedados por um daemon iniciado por uma instalação anterior do Orca. O macOS pode não aplicar a eles as permissões de Acessibilidade, Automação ou de arquivos protegidos do Orca. Reinicie o daemon em Gerenciar Sessões para restaurar o acesso. Isso fechará todos os terminais do Orca em execução.",
     "openManageSessions": "Abra Gerenciar Sessões",
     "dismiss": "Dispensar",
+    "folderAccessTitle": "Os terminais não conseguem ler sua {{folder}}",
+    "folderAccessDescription": "O macOS está bloqueando o serviço de terminal do Orca nesta pasta, então comandos executados ali podem falhar até isso ser corrigido.",
     "folderAccessFix": "Corrigir"
+   },
+   "ipc": {
+    "events": {
+     "browserStateIpcBridge": {
+      "docPreviewLinkFailed": "Não foi possível abrir este link no Orca Browser."
+     },
+     "os": {
+      "markdown": {
+       "file": {
+        "open": {
+         "bridge": {
+          "1e9a1a63c4": "Falha ao abrir o arquivo Markdown."
+         }
+        }
+       }
+      }
+     }
+    }
    }
   },
   "components": {
