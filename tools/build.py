@@ -235,8 +235,10 @@ def main() -> None:
             continue
         english = decode_js(source[key])
         for term in verbatim:
-            if (re.search(rf"\b{re.escape(term)}\b", english, re.I)
-                    and not re.search(rf"\b{re.escape(term)}\b", value, re.I)):
+            # s?: plural em inglês/português ("workspaces") não é desvio
+            pat = rf"\b{re.escape(term)}(?:s|es)?\b"
+            if (re.search(pat, english, re.I)
+                    and not re.search(pat, value, re.I)):
                 glossary_warnings.append(f"{key}: termo {term!r} sumiu — en: {english!r} → pt: {value!r}")
         for term, wrongs in banned.items():
             if any(w in value.lower() for w in wrongs):
