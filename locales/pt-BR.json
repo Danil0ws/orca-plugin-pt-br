@@ -1996,8 +1996,40 @@
     "9b40d7b018": "Copiar"
    },
    "NativeChatResumeOnRestartModal": {
+    "title": "Retomar chats interrompidos?",
+    "body": "Estes chats estavam em uso quando o Orca foi fechado. Retomar restaura cada um de onde parou, com todo o seu contexto, e pede ao agente que verifique o que estava fazendo antes de continuar. Seu próprio prompt não é reenviado.",
+    "updateBody": "Estes chats estavam em uso quando o Orca instalou uma atualização. Retomar restaura cada um de onde parou, com todo o seu contexto, e pede ao agente que verifique o que estava fazendo antes de continuar. Seu próprio prompt não é reenviado.",
+    "resuming": "Retomando…",
+    "untitled": "Chat sem título",
+    "listLabel": "Chats que seriam retomados",
+    "dontAskAgain": "Não perguntar de novo (retomar automaticamente)",
+    "dontAskAgainHint": "Você pode desativar isso em Configurações → Experimental → Chat UI.",
+    "continuedOne": "Retomou 1 chat e pediu que continuasse",
+    "continuedMany": "Retomou {{value0}} chats e pediu que continuassem",
+    "selectAgent": "Retomar o chat de {{value0}} \"{{value1}}\" em {{value2}}",
+    "resumeSelected": "Retomar {{value0}} chats",
+    "resumeSelectedOne": "Retomar 1 chat",
+    "continueUnconfirmed": "A entrega da continuação não foi confirmada para {{value0}} chats. Abra-os para verificar antes de enviar outra mensagem.",
+    "continueUnconfirmed_one": "A entrega da continuação não foi confirmada para {{value0}} chat. Abra-o para verificar antes de enviar outra mensagem.",
+    "continueUnconfirmed_other": "A entrega da continuação não foi confirmada para {{value0}} chats. Abra-os para verificar antes de enviar outra mensagem.",
+    "dismissAll": "Dispensar tudo",
+    "dismissUnconfirmed": "A dispensa da oferta de retomada não foi confirmada — ela pode ainda estar na barra de status.",
+    "notContinuedOne": "1 chat não pôde ser retomado",
+    "notContinuedMany": "{{value0}} chats não puderam ser retomados",
+    "notConfirmedOne": "Não foi possível confirmar que 1 chat foi retomado",
+    "notConfirmedMany": "Não foi possível confirmar que {{value0}} chats foram retomados",
+    "notConfirmedOtherOne": "Não foi possível confirmar que mais 1 chat foi retomado",
+    "notConfirmedOtherMany": "Não foi possível confirmar que outros {{value0}} chats foram retomados",
     "show": "Mostrar",
-    "dismiss": "Dispensar"
+    "dismiss": "Dispensar",
+    "activityUnnamed": "sem nome",
+    "activityApproval": "Aguardando sua aprovação: {{value0}}",
+    "activityQuestion": "Aguardando sua resposta: {{value0}}",
+    "activityMidReply": "No meio da resposta",
+    "activitySubagentOne": "Subagente em execução: {{value0}}",
+    "activitySubagentMany": "{{value0}} subagentes em execução",
+    "activityMonitorOne": "Monitorando: {{value0}}",
+    "activityMonitorMany": "Monitorando {{value0}} tarefas em segundo plano"
    },
    "StarNagCard": {
     "92b0f9d921": "está autenticado e tente novamente.",
@@ -2421,7 +2453,8 @@
     "a4650b0dc4": "Não foi possível usar o build local",
     "b1e390250d": "Não foi possível concluir a troca para o build local.",
     "d29740d175": "O build selecionado não pôde ser usado.",
-    "37d45c9ec1": "Escolher outro build"
+    "37d45c9ec1": "Escolher outro build",
+    "7f1a4c9e02": "Seu gerenciador de pacotes do sistema instalou o Orca, então atualize por lá — o Orca não consegue instalar esta versão sozinho."
    },
    "WorktreeJumpPalette": {
     "ac037cfac2": "Mover",
@@ -2465,7 +2498,8 @@
     "pluginCommandFailed": "Não foi possível executar o comando do plugin.",
     "recentChatsTerminalsHeader": "Bate-papos e terminais recentes",
     "27f10cca63": "Pesquise chats, terminais, worktrees, configurações e ações...",
-    "2770f02910": "Pesquise bate-papos, terminais, worktrees, configurações e ações"
+    "2770f02910": "Pesquise bate-papos, terminais, worktrees, configurações e ações",
+    "lastActiveTime": "Ativo pela última vez há {{value0}}"
    },
    "github": {
     "pr": {
@@ -4248,7 +4282,8 @@
      "rangeLast7Days": "Últimos 7 dias",
      "rangeLast30Days": "Últimos 30 dias",
      "rangeLast90Days": "Últimos 90 dias",
-     "rangeAllTime": "Todo o período"
+     "rangeAllTime": "Todo o período",
+     "costExcludesUnpricedModels": "• exclui modelos sem preço"
     },
     "OpenCodeUsagePane": {
      "349f7c3f5c": "Total",
@@ -4345,7 +4380,9 @@
      "ca6bc5fded": "Atualizar",
      "e06d1baf5c": "Atualizar visão geral de uso",
      "c760c481c5": "Visão Geral de Uso",
-     "55c910f4f1": "- alguns preços de modelo não estão disponíveis"
+     "55c910f4f1": "- alguns preços de modelo não estão disponíveis",
+     "enableMuse": "Ativar Muse",
+     "noLocalUsageYet": "Nenhum uso local do Claude, Codex, OpenCode ou Muse encontrado ainda. O resumo será preenchido depois que a próxima sessão de agente gravar os logs de tokens."
     },
     "share": {
      "card": {
@@ -4382,7 +4419,8 @@
       "e7f0a1b2c3": "assinatura",
       "d6e9f0a1b2": "créditos",
       "a3b6c7d8e9": "uso do grok",
-      "9f2a3b4c5d": "xai"
+      "9f2a3b4c5d": "xai",
+      "museKeyword": "muse"
      }
     },
     "usage": {
@@ -4415,7 +4453,8 @@
        "d9a4b3e2f1c5": "eventos",
        "statusScanning": "Verificando",
        "statusEnabled": "Ativado",
-       "statusOff": "Desativado"
+       "statusOff": "Desativado",
+       "recentCombinedActivity": "Atividade recente combinada de tokens do Claude, Codex, OpenCode e Muse."
       }
      }
     },
@@ -4448,6 +4487,17 @@
      "e5a6b7c8d9": "Créditos semanais usados",
      "f6b7c8d9e0": "Reinício do período de cobrança",
      "a7b8c9d0e1": "Configurações da conta Grok"
+    },
+    "MuseUsagePane": {
+     "title": "Acompanhamento do uso do Muse",
+     "enableLabel": "Ativar análise de uso do Muse",
+     "disabledDescription": "Lê os registros locais de sessão do Muse para mostrar estatísticas de tokens, modelo e sessões.",
+     "scopeAll": "Todo o uso local do Muse",
+     "optionsLabel": "Opções de uso do Muse",
+     "refreshAriaLabel": "Atualizar uso do Muse",
+     "emptyMessage": "Nenhum uso local do Muse encontrado ainda neste escopo.",
+     "noCostNote": "Os registros de sessão do Muse guardam tokens, mas não custo, então nenhuma estimativa de custo é exibida.",
+     "recentSessionsDescription": "Sessões locais mais recentes do Muse neste escopo."
     }
    },
    "sparse": {
@@ -16433,36 +16483,63 @@
      "770d458144": "Agrupar atividade de agentes por",
      "795cbf26e2": "Filtrar...",
      "4616ea39fd": "Ir para o workspace",
+     "markThreadRead": "Marcar thread como lida",
      "59b131fbd9": "Marcar thread como não lida",
      "beb2c19173": "Não lida",
      "5651b216c6": "Projeto desconhecido",
      "22b22034bc": "Terminal independente indisponível em Atividade.",
      "afdc2139a8": "Terminal do agente fechado. Abra um novo terminal neste workspace para continuar.",
+     "clearCompleted": "Limpar concluídos",
      "none": "Nenhum",
      "search": "Buscar",
+     "showUnreadOnly": "Mostrar apenas não lidas",
+     "showChildAgents": "Mostrar agentes filhos",
+     "activityOptions": "Opções de atividade",
+     "threadListOptionsFiltered": "Opções da lista de threads, filtros ativos",
+     "showSearch": "Mostrar busca",
+     "interrupted": "Interrompido",
      "state": {
       "working": "Trabalhando",
+      "monitoring": "Monitorando tarefas em segundo plano",
       "blocked": "Bloqueado",
+      "waiting": "Aguardando entrada",
       "failed": "Falhou",
       "done": "Concluído",
       "idle": "Ocioso",
+      "unverifiable": "Sem atualização recente",
+      "unconfirmed": "Não foi possível confirmar",
       "permission": "Precisa de atenção"
      },
      "filtersSection": "Filtros",
      "viewSection": "Visualizar"
     },
     "clearCompleted": {
+     "clearedOne": "Foi limpo 1 agente concluído",
+     "clearedMany": "Foram limpos {{count}} agentes concluídos",
      "undo": "Desfazer"
+    },
+    "standaloneWorktree": {
+     "floatingTerminal": "Terminal flutuante",
+     "standaloneTerminal": "Terminal independente"
     },
     "ActivityTitlebarControls": {
      "f915168c8e": "não lidas",
      "d6a8de3934": "agentes",
      "dc708f3eff": "Fechar agentes"
     },
+    "ActivityScopeFilterControls": {
+     "hiddenCount": "{{value0}} ocultos",
+     "resetScope": "Mostrar todos os hosts e projetos"
+    },
     "ActivityThreadHoverCard": {
+     "pathCopied": "Caminho copiado para a área de transferência",
+     "copyPathFailed": "Falha ao copiar caminho",
      "workspace": "Workspace",
      "copyPath": "Copiar caminho",
      "jumpToWorkspace": "Ir para o workspace"
+    },
+    "ActivityThreadRow": {
+     "clearNotification": "Limpar notificação"
     }
    },
    "confirmation": {
@@ -16945,6 +17022,9 @@
     "previewUnavailable": "Visualização indisponível",
     "previewUnavailableDescription": "Abra este artefato em seu navegador para visualizá-lo.",
     "actions": "Ações de artefato",
+    "ArtifactActions": {
+     "more": "Mais ações de artefato"
+    },
     "ArtifactCollection": {
      "loadMore": "Carregar mais",
      "noMatches": "Nenhuma ocorrência"
@@ -16995,7 +17075,11 @@
      "updating": "Atualizando…",
      "update": "Atualizar conteúdo compartilhado"
     },
+    "ArtifactDetailDrawer": {
+     "description": "Pré-visualize e gerencie este artefato compartilhado."
+    },
     "ArtifactListSearchField": {
+     "label": "Pesquisar artefatos",
      "placeholder": "Pesquisar...",
      "clear": "Limpar busca"
     },
@@ -17004,8 +17088,13 @@
      "type": "Digite",
      "size": "Tamanho",
      "updated": "Atualizado",
+     "expires": "Expira",
      "actions": "Ações"
     },
+    "ArtifactsPageSkeleton": {
+     "loading": "Carregando artefatos"
+    },
+    "expiredCompact": "Expirado",
     "typeMarkdown": "Markdown",
     "typeHtml": "HTML"
    },
@@ -17046,18 +17135,50 @@
      "externalLinkCancel": "Cancelar"
     }
    },
+   "HostedReviewUnlinkMenuItem": {
+    "label": "Desvincular {{value0}} do workspace",
+    "description": "O Orca vai ocultar os detalhes de {{value0}} {{value1}} deste workspace. A {{value0}} e a branch em {{value2}} não serão alteradas."
+   },
    "UnexpectedSignoutCard": {
+    "9f2c1a4b7d": "Você foi desconectado",
     "3e8f5c2a91": "Dispensar",
+    "7b4d9e1f2a": "Faça login novamente como {{value0}} para restaurar o compartilhamento de artefatos, o Orca Relay e o compartilhamento de skills.",
+    "5a1c8d3e6f": "Faça login novamente para restaurar o compartilhamento de artefatos, o Orca Relay e o compartilhamento de skills.",
+    "1f6b2c9d4e": "O que você ganha de volta",
     "8d2e4f7a1b": "Compartilhamento de artefato",
+    "2c9a5b6e8d": "Publique arquivos HTML e Markdown e gerencie todos os links compartilhados do Orca.",
     "6e3f1a9c5b": "Orca Relay",
     "4b7d2e8f1a": "Conecte o Orca Mobile a este desktop através de celular ou qualquer Wi-Fi.",
     "9a4c6b2d7e": "Compartilhamento de skills",
+    "3d8e5f1b9c": "Compartilhe skills por trás de um link não listado e instale-as em qualquer máquina que você use.",
     "c5b3e8a17d": "Faça login no Orca"
    },
    "NativeChatResumeOutcomeRow": {
+    "openChat": "Abrir chat",
     "retry": "Tentar novamente",
     "dismiss": "Dispensar",
-    "statusFor": "{{value0}}: {{value1}}"
+    "unconfirmed": "Não foi possível confirmar que o chat foi retomado",
+    "failed": "Não foi possível retomar",
+    "statusFor": "{{value0}}: {{value1}}",
+    "dismissChat": "Dispensar \"{{value0}}\" em {{value1}}",
+    "toResume": "Para retomar:"
+   },
+   "NativeChatResumeFailureGuidance": {
+    "unconfirmed": "O Orca não conseguiu confirmar se a mensagem \"continuar\" foi entregue. Abra o chat e verifique antes de enviar outra.",
+    "superseded": "Abra o chat e responda. Novo trabalho chegou nele logo após a reinicialização, então o Orca não enviou a mensagem \"continuar\".",
+    "conflict": "Outra janela ou terminal do Orca ainda controla esta sessão. Feche-o e tente novamente.",
+    "ownershipUnknown": "O Orca ainda está descobrindo qual processo controla esta sessão. Aguarde um momento e tente novamente.",
+    "notAttached": "O chat não reconectou. Tente novamente ou abra-o para iniciar uma nova interação.",
+    "dispatchRejected": "O agente recusou a mensagem \"continuar\". Abra o chat e envie-a você mesmo.",
+    "unsupported": "Este chat não pode ser retomado pelo Orca. Abra-o para ver onde parou.",
+    "fallback": "O Orca não conseguiu retomar este chat. Abra-o para continuar manualmente."
+   },
+   "web": {
+    "preloadApi": {
+     "cursorAccounts": {
+      "hostOnly": "Os detalhes de login do Cursor só são legíveis no computador que está rodando o Orca."
+     }
+    }
    }
   },
   "i18n": {
@@ -17130,15 +17251,34 @@
     "stepTooltip": {
      "agent": "Agente Padrão",
      "theme": "Aparência",
+     "windowsTerminal": "Windows Terminal",
      "notifications": "Notificações",
      "integrations": "Integrações"
     },
     "actions": {
-     "continue": "Continuar"
+     "addFirstProject": "Adicione seu primeiro projeto",
+     "continue": "Continuar",
+     "openingAddProject": "Abrindo Adicionar Projeto..."
     }
    },
    "skipConfirmation": {
-    "skip": "Pular"
+    "skip": "Pular",
+    "keepGoing": "Não, continuar"
+   },
+   "theme": {
+    "hints": {
+     "system": "Combinar com o SO",
+     "dark": "Confortável para os olhos",
+     "light": "Brilhante e nítido"
+    }
+   },
+   "integrations": {
+    "capabilities": {
+     "startWorkspaceFromIssue": "Inicie um workspace a partir de qualquer issue ou pull request do GitHub, já preenchido com o título e o contexto dela",
+     "browseIssues": "Navegue por issues e pull requests do GitHub na visualização de Tarefas sem sair do Orca",
+     "reviewStatus": "Veja o estado da issue, o status da revisão e os checks de CI em cada worktree",
+     "managePullRequests": "Leia, comente e faça merge de pull requests sem sair do Orca"
+    }
    }
   },
   "jiraUserPicker": {
@@ -17147,17 +17287,149 @@
    "empty": "Nenhum usuário encontrado"
   },
   "native-chat": {
+   "failureWords": {
+    "theAgent": "O agente",
+    "providerStartFailed": "{{agent}} parou antes de terminar de iniciar.",
+    "runCommandAgain": "Execute /{{command}} novamente.",
+    "sendToTryAgain": "Envie sua mensagem para tentar novamente.",
+    "couldNotStart": "{{agent}} não conseguiu iniciar.",
+    "couldNotRestart": "Não foi possível reiniciar o {{agent}}.",
+    "notSignedIn": "{{agent}} não fez login para a conta selecionada.",
+    "signInFirst": "Faça login primeiro.",
+    "signInThenRunCommand": "Faça login e execute /{{command}} novamente.",
+    "signInThenSend": "Faça login e envie sua mensagem novamente.",
+    "historyTooLarge": "O histórico desta conversa é grande demais para ser restaurado aqui.",
+    "managedAccountEnvOverride": "Esta inicialização do Claude define suas próprias variáveis de login do Anthropic. Remova-as para usar uma conta Claude gerenciada.",
+    "accountSwitchInProgress": "Uma troca de conta do Claude está em andamento. Tente de novo depois que ela terminar.",
+    "managedAccountUnsupported": "Embora uma conta Claude seja adicionada no WSL, os chats do Claude precisam de uma conta Claude do Windows.",
+    "chooseClaudeAccount": "Escolha ou adicione uma nas configurações de Contas do Claude.",
+    "chooseClaudeAccountThenRunCommand": "Escolha ou adicione uma nas configurações de Contas do Claude e depois execute /{{command}} novamente.",
+    "chooseClaudeAccountThenSend": "Escolha ou adicione uma nas configurações de Contas do Claude e depois envie sua mensagem de novo.",
+    "providerExitedRow": "{{agent}} parou enquanto esta resposta estava em andamento. Você pode continuar nesta conversa.",
+    "providerExitedRejection": "{{agent}} parou antes que esta mensagem fosse enviada.",
+    "providerRejected": "O provedor não aceitou esta mensagem.",
+    "providerRejectedQuoted": "O provedor não aceitou esta mensagem: {{detail}}.",
+    "attachmentEmpty": "Uma imagem desta mensagem está vazia, então a mensagem não foi enviada.",
+    "attachmentTooLarge": "Uma imagem desta mensagem é grande demais, então a mensagem não foi enviada.",
+    "attachmentLargerThan": "Uma imagem desta mensagem é maior que {{size}} MB, então a mensagem não foi enviada.",
+    "attachmentTooMany": "Esta mensagem tem imagens demais, então não foi enviada.",
+    "attachmentAtMost": "{{agent}} aceita no máximo {{limit}} imagens em uma mensagem, então esta mensagem não foi enviada.",
+    "attachmentTotalTooLarge": "As imagens desta mensagem são grandes demais juntas, então a mensagem não foi enviada.",
+    "attachmentTotalMoreThan": "As imagens desta mensagem somam mais de {{size}} MB, então a mensagem não foi enviada.",
+    "attachmentUnsupportedType": "{{agent}} aceita apenas imagens PNG, JPEG, GIF e WebP, então esta mensagem não foi enviada.",
+    "attachmentNotAFile": "Uma imagem desta mensagem não é um arquivo, então a mensagem não foi enviada.",
+    "attachmentNoSource": "Uma imagem desta mensagem não tem arquivo para enviar, então a mensagem não foi enviada.",
+    "attachmentInvalid": "Um anexo desta mensagem não pode ser enviado ao agente.",
+    "attachmentUnreadable": "Um anexo desta mensagem não pôde ser lido, então a mensagem não foi enviada.",
+    "emptyMessage": "Esta mensagem está vazia, então não foi enviada.",
+    "queueFull": "Havia mensagens demais aguardando pelo agente, então esta não foi enviada.",
+    "writeFailed": "O Orca não conseguiu entregar esta mensagem ao agente, então ela não foi enviada.",
+    "cancelled": "Esta mensagem foi retirada antes de o agente iniciá-la.",
+    "chatClosed": "O chat fechou antes que esta mensagem fosse enviada.",
+    "hostRestarted": "O Orca reiniciou antes que esta mensagem fosse enviada.",
+    "notDelivered": "Esta mensagem não foi entregue.",
+    "notDeliveredSendAgain": "Esta mensagem não foi entregue. Envie-a novamente para continuar.",
+    "commandRefused": "Este comando não foi executado.",
+    "commandRefusedTryAgain": "Este comando não foi executado. Tente de novo.",
+    "compactionFailed": "A compactação falhou.",
+    "compactionFailedQuoted": "A compactação falhou: {{detail}}.",
+    "compactionUnconfirmed": "A conclusão da compactação não foi confirmada.",
+    "cancelUnconfirmed": "O cancelamento não foi confirmado.",
+    "stopRefused": "{{agent}} não parou.",
+    "stopRefusedQuoted": "{{agent}} não parou: {{detail}}.",
+    "noTurnToStop": "{{agent}} não tinha nenhum turno em execução para parar.",
+    "answerUnconfirmed": "Sua resposta foi registrada, mas o agente não a confirmou.",
+    "hostFault": "O Orca encontrou um problema, então esta mensagem não foi enviada.",
+    "hostFaultTryAgain": "O Orca encontrou um problema, então esta mensagem não foi enviada. Tente novamente.",
+    "hostStopped": "{{agent}} não terminou de iniciar, então o Orca o interrompeu.",
+    "providerRateLimited": "{{agent}} atingiu o limite de requisições e está tentando novamente.",
+    "providerRetrying": "{{agent}} encontrou um problema temporário e está tentando novamente.",
+    "providerRetryingQuoted": "{{agent}} está tentando novamente: {{detail}}.",
+    "previousExitUnverifiable": "O Orca não conseguiu confirmar que o processo anterior do {{agent}} terminou. As mensagens aguardam ser enviadas até o Orca confirmar que ele terminou."
+   },
+   "writeNotice": {
+    "notDoneReadHistory": "Não foi possível carregar o histórico deste chat.",
+    "notDoneSend": "Sua mensagem não foi enviada.",
+    "tryAgainComposerSend": "Envie de novo.",
+    "notDoneStop": "O agente não foi interrompido.",
+    "notDoneStopTask": "A tarefa em segundo plano não foi interrompida.",
+    "notDoneStopTasks": "As tarefas em segundo plano não foram interrompidas.",
+    "notDoneAnswer": "Sua resposta não foi enviada.",
+    "notDoneOption": "A configuração não foi alterada.",
+    "notDoneCommand": "O comando não foi executado.",
+    "notDoneGoal": "O objetivo não foi alterado.",
+    "restartFailed": "O agente não conseguiu reiniciar.",
+    "capacity": "O Orca recebeu muitas requisições no último dia.",
+    "outcomeUnknown": "O Orca não conseguiu confirmar o que aconteceu. Verifique o chat.",
+    "questionChanged": "Esta pergunta já foi respondida ou mudou.",
+    "historyUnreadable": "O Orca não conseguiu ler o histórico salvo deste chat.",
+    "historyUnusable": "Não foi possível carregar este chat.",
+    "historyUnavailable": "O Orca não conseguiu abrir o histórico deste chat no momento.",
+    "savedByNewerOrca": "Os chats foram salvos por um Orca mais recente.",
+    "updateOrcaToKeepUsing": "Atualize o Orca para continuar usando esses recursos.",
+    "unsupported": "O Orca que está rodando este chat não suporta isso. Atualize o Orca e tente de novo.",
+    "unreachable": "O Orca não conseguiu alcançar o agente.",
+    "recordFailed": "O Orca não conseguiu registrar isso no histórico deste chat.",
+    "conversationCleared": "Esta conversa foi limpa.",
+    "openCurrentConversation": "Abra a conversa atual para continuar.",
+    "clearUnfinished": "O último /clear não terminou.",
+    "commandRunning": "Um /compact ou /clear ainda está em execução.",
+    "waitForCommand": "Espere o /compact ou o /clear terminar.",
+    "agentStarting": "O agente ainda está iniciando.",
+    "waitForStart": "Espere o agente terminar de iniciar.",
+    "turnActive": "O agente ainda está respondendo.",
+    "waitForTurn": "Espere o agente terminar de responder, ou interrompa-o.",
+    "promptPending": "O agente está aguardando uma resposta a uma pergunta ou uma aprovação.",
+    "answerFirst": "Responda à pergunta ou à aprovação primeiro.",
+    "backgroundTasksRunning": "As tarefas em segundo plano ainda estão rodando.",
+    "waitForBackgroundTasks": "Espere as tarefas em segundo plano terminarem.",
+    "messagesUnsettled": "Uma mensagem que você enviou ainda não foi confirmada.",
+    "settleEarlierMessage": "Espere sua mensagem anterior ser enviada, ou tente de novo.",
+    "optionRejected": "O agente não aceitou esta configuração.",
+    "goalsUnsupported": "Este agente não suporta goals.",
+    "agentRefused": "O agente recusou isso.",
+    "ownerUnproven": "O Orca não confirmou que o agente anterior deste chat foi interrompido.",
+    "reopenChat": "Reabra o chat para verificar de novo.",
+    "terminalAgentHoldsChat": "Este chat ainda está aberto em um agente de terminal.",
+    "quitTerminalAgent": "Encerre aquele agente para continuar o chat aqui.",
+    "hostReconciling": "O Orca ainda está verificando este chat após a reinicialização.",
+    "waitMoment": "Aguarde um momento.",
+    "recordUnreadable": "O Orca não conseguiu ler o estado salvo deste chat.",
+    "chatNotFound": "O Orca que está executando este chat não tem registro dele.",
+    "startNewChat": "Inicie um novo chat para continuar.",
+    "tryAgain": "Tente novamente."
+   },
    "taskList": {
     "title": "Tarefas",
     "completed": "Concluído",
     "inProgress": "Em andamento",
-    "pending": "Pendente"
+    "pending": "Pendente",
+    "empty": "Nenhuma tarefa",
+    "progress": "{{completed}} de {{total}} tarefas concluídas",
+    "added": "Adicionada: {{task}}",
+    "removed": "Removida: {{task}}",
+    "started": "Iniciada: {{task}}",
+    "finished": "Concluída: {{task}}",
+    "reset": "Marcada como pendente: {{task}}",
+    "updated": "Atualizada: {{task}}",
+    "unchanged": "Tarefas inalteradas",
+    "showAll": "Lista completa de tarefas"
+   },
+   "turnDiff": {
+    "one": "1 arquivo alterado",
+    "many": "{{count}} arquivos alterados",
+    "partial": "Diff parcial",
+    "recorded": "Totais das edições registradas nesta rodada."
    },
    "receipt": {
+    "unavailable": "Resposta selecionada indisponível",
     "cancelled": "Cancelado",
-    "resolved": "Resolvido"
+    "resolved": "Resolvido",
+    "resolver": "Respondida em {{device}}",
+    "cancelledBy": "Cancelada em {{device}}"
    },
    "notices": {
+    "compaction": "Contexto compactado",
     "details": "Detalhes",
     "plan": "Plano"
    },
@@ -17191,7 +17463,9 @@
     "removeAttachment": "Remover anexo",
     "pastedImageLabel": "Imagem colada",
     "imagePasteFailed": "Falha ao colar a imagem.",
+    "imageSaving": "Salvando imagem colada…",
     "worktreeNotReady": "Worktree não está pronto — tente novamente em instantes.",
+    "pasteUnavailable": "Não dá para colar — este chat não está aceitando entrada no momento.",
     "uploadingAttachments": "Enviando {{value0}} arquivo(s) para o remoto…",
     "model": "Modelo",
     "effort": "Esforço",
@@ -17203,6 +17477,7 @@
     "toggleOption": "Alternar {{value0}}",
     "pillAccessibleName": "{{value0}} {{value1}}",
     "valueIsDefault": "Padrão",
+    "valueNotReported": "Não informado",
     "sentNotConfirmed": "Enviado ao agente — não confirmado",
     "setWhenSessionStarts": "Definido quando a sessão começa.",
     "availableAfterSessionStarts": "Disponível depois que a sessão começa.",
@@ -17214,38 +17489,137 @@
      "medium": "Médio",
      "high": "Alto",
      "xhigh": "Extra alto",
-     "max": "Máximo"
+     "max": "Máximo",
+     "ultra": "Ultra"
     },
     "pendingAttachmentLimit": "Muitos anexos aguardando. Conclua a mensagem antes de anexar mais.",
     "viewAttachment": "Ver imagem",
     "imagePreview": "Visualização da imagem em tamanho real",
-    "imagePreviewUnavailable": "Visualização indisponível"
+    "imagePreviewUnavailable": "Visualização indisponível",
+    "workspaceAttachmentMismatch": "Os arquivos só podem ser anexados ao workspace de origem.",
+    "attachmentOwnerChanged": "Este workspace mudou de host durante o anexo — solte os arquivos novamente.",
+    "attachmentUnreadable": "Não foi possível ler os arquivos soltos."
    },
    "tool": {
+    "exitCode": "exit {{value0}}",
+    "milliseconds": "{{value0}}ms",
     "running": "Executando…",
     "result": "Resultado",
     "countOne": "1 chamada de ferramenta",
     "countN": "{{value0}} chamadas de ferramenta",
     "moreCalls": "+{{value0}} mais",
     "failedCount": "{{value0}} falhou",
-    "runPair": "{{value0}} e {{value1}}"
+    "failedCallsLabel": "Chamadas de ferramenta com falha: {{value0}}",
+    "runningPreview": "Executando {{preview}}",
+    "runningCommand": "Executando comando",
+    "runningNamedPreview": "Executando {{toolName}} {{preview}}",
+    "runningNamed": "Executando {{toolName}}",
+    "ranCommandOneToolSummary": "Executou {{commandCount}} comando e usou {{toolCount}} ferramenta",
+    "ranCommandManyToolsSummary": "Executou {{commandCount}} comando e usou {{toolCount}} ferramentas",
+    "ranCommandsOneToolSummary": "Executou {{commandCount}} comandos e usou {{toolCount}} ferramenta",
+    "ranCommandsManyToolsSummary": "Executou {{commandCount}} comandos e usou {{toolCount}} ferramentas",
+    "usedOneSummary": "Usou 1 ferramenta",
+    "usedManySummary": "Usou {{toolCount}} ferramentas",
+    "editedFile": "Arquivo editado",
+    "addedFile": "Arquivo adicionado",
+    "deletedFile": "Arquivo excluído",
+    "renamedFile": "Arquivo renomeado",
+    "copyDiff": "Copiar diff",
+    "diffGap": "Linhas não exibidas",
+    "diffTruncated": "Diff truncado",
+    "runReadOne": "Leu 1 arquivo",
+    "runReadMany": "Leu {{value0}} arquivos",
+    "runSearchOne": "Pesquisou 1 vez",
+    "runSearchMany": "Pesquisou {{value0}} vezes",
+    "runListFilesOne": "Listou 1 diretório",
+    "runListFilesMany": "Listou {{value0}} diretórios",
+    "runCommandOne": "Executou 1 comando",
+    "runCommandMany": "Executou {{value0}} comandos",
+    "runFileChangeOne": "Editou 1 arquivo",
+    "runFileChangeMany": "Editou {{value0}} arquivos",
+    "runWebSearchOne": "Pesquisou na web 1 vez",
+    "runWebSearchMany": "Pesquisou na web {{value0}} vezes",
+    "runIntegrationOne": "Usou 1 integração",
+    "runIntegrationMany": "Usou {{value0}} integrações",
+    "runAgentOne": "Executou 1 agente",
+    "runAgentMany": "Executou {{value0}} agentes",
+    "runPlanOne": "Atualizou o plano",
+    "runPlanMany": "Atualizou o plano {{value0}} vezes",
+    "runToolOne": "Usou 1 ferramenta",
+    "runToolMany": "Usou {{value0}} ferramentas",
+    "runPair": "{{value0}} e {{value1}}",
+    "runList": "{{value0}}, e {{value1}}",
+    "runLiveReadOne": "Lendo 1 arquivo",
+    "runLiveReadMany": "Lendo {{value0}} arquivos",
+    "runLiveSearchOne": "Pesquisando 1 vez",
+    "runLiveSearchMany": "Pesquisando {{value0}} vezes",
+    "runLiveListFilesOne": "Listando 1 diretório",
+    "runLiveListFilesMany": "Listando {{value0}} diretórios",
+    "runLiveCommandOne": "Executando 1 comando",
+    "runLiveCommandMany": "Executando {{value0}} comandos",
+    "runLiveFileChangeOne": "Editando 1 arquivo",
+    "runLiveFileChangeMany": "Editando {{value0}} arquivos",
+    "runLiveWebSearchOne": "Pesquisando na web 1 vez",
+    "runLiveWebSearchMany": "Pesquisando na web {{value0}} vezes",
+    "runLiveIntegrationOne": "Usando 1 integração",
+    "runLiveIntegrationMany": "Usando {{value0}} integrações",
+    "runLiveAgentOne": "Executando 1 agente",
+    "runLiveAgentMany": "Executando {{value0}} agentes",
+    "runLivePlanOne": "Atualizando o plano",
+    "runLivePlanMany": "Atualizando o plano {{value0}} vezes",
+    "runLiveToolOne": "Usando 1 ferramenta",
+    "runLiveToolMany": "Usando {{value0}} ferramentas"
+   },
+   "providerFrame": {
+    "byteLength": "{{value0}} bytes"
    },
    "status": {
     "responding": "O agente está respondendo",
     "working": "Processando…",
     "thinking": "Pensando",
     "workingFor": "Trabalhando há {{value0}}",
-    "workedFor": "Trabalhou por {{value0}}"
+    "workedFor": "Trabalhou por {{value0}}",
+    "interruptedAfter": "Interrompido após {{value0}}",
+    "failedAfter": "Falhou após {{value0}}",
+    "toggleDetails": "Alternar detalhes do turno"
    },
    "backgroundTasks": {
+    "monitoring": "Monitorando tarefas em segundo plano",
     "stop": "Parar",
+    "stopTask": "Parar {{value0}}",
+    "stopAll": "Parar tarefas em segundo plano",
+    "agent": "Agente em segundo plano",
+    "workflow": "Fluxo em segundo plano",
+    "command": "Comando em segundo plano",
+    "monitor": "Monitor em segundo plano",
+    "task": "Tarefa em segundo plano",
+    "outputFile": "Saída: {{value0}}",
+    "detailsUnavailable": "Os detalhes da tarefa não estão disponíveis para esta sessão.",
+    "countAgentsOne": "1 agente",
+    "countAgentsMany": "{{value0}} agentes",
+    "countShellOne": "1 shell",
+    "countShellMany": "{{value0}} shells",
+    "countShellCommandOne": "1 comando de shell",
+    "countMonitorsOne": "1 monitor",
+    "countMonitorsMany": "{{value0}} monitores",
+    "countWorkflowsOne": "1 fluxo",
+    "countWorkflowsMany": "{{value0}} fluxos",
+    "countTasksOne": "1 tarefa",
+    "countTasksMany": "{{value0}} tarefas",
+    "headerTotal": "{{value0}} tarefas em segundo plano",
     "stateWorking": "trabalhando",
+    "stateMonitoring": "monitorando",
     "stateWaiting": "aguardando",
+    "stateBlocked": "bloqueado",
     "stateDone": "concluído",
     "stateIdle": "parado",
+    "stateUnverifiable": "não verificável",
+    "reasonWaiting": "precisa de aprovação",
+    "reasonUnverifiable": "sem contato",
     "reasonBlocked": "falhou",
     "groupAgents": "Agentes",
     "groupShell": "Shell",
+    "groupMonitors": "Monitores",
     "groupWorkflows": "Fluxos",
     "groupTasks": "Tarefas"
    },
@@ -17261,8 +17635,11 @@
     },
     "error": {
      "title": "Não foi possível carregar a conversa",
-     "subtitle": "Não foi possível ler a transcrição. Volte para o terminal para continuar trabalhando."
+     "subtitle": "Não foi possível ler a transcrição. Volte para o terminal para continuar trabalhando.",
+     "retryingSubtitle": "Não foi possível ler a transcrição. O Orca continua tentando carregá-la.",
+     "keepsTrying": "O Orca continua tentando carregá-lo."
     },
+    "reconnecting": "Reconectando a este chat…",
     "pairHost": "Pareie um host para ver o histórico de chat do agente.",
     "notAgent": {
      "title": "Nenhuma conversa aqui",
@@ -17281,6 +17658,8 @@
    "scrollMessageToTop": "Rolar esta mensagem para o topo",
    "loadingEarlier": "Carregando…",
    "loadEarlier": "Carregar mensagens anteriores",
+   "loadingEarlierMessages": "Carregando mensagens anteriores…",
+   "railLabel": "Suas mensagens",
    "railImageMessage": "Anexo de imagem",
    "railEmptyMessage": "Mensagem",
    "question": {
@@ -17293,37 +17672,112 @@
     "skip": "Pular",
     "sending": "Enviando…"
    },
+   "ask": {
+    "awaiting": "Aguardando entrada do usuário:",
+    "awaitingUnnamed": "Aguardando entrada do usuário",
+    "asked": "Solicitado:",
+    "questionCount": "{{value0}} perguntas"
+   },
    "approval": {
     "title": "Permitir {{value0}}?",
     "allow": "Permitir",
     "deny": "Negar",
     "cancel": "Cancelar",
-    "reason": "Motivo"
+    "reason": "Motivo",
+    "blockedPath": "Caminho bloqueado",
+    "askRule": "Regra de solicitação",
+    "plan": {
+     "file": "Arquivo de plano"
+    }
    },
    "launchPromptNotDelivered": "Não entregue — verifique o terminal",
    "structuredSessionLaunchFailed": "Não foi possível abrir o chat do {{value0}}",
+   "structuredSessionLaunchFailedDescription": "O Orca não conseguiu abrir um chat estruturado de {{value0}}. Veja os logs para detalhes.",
    "subagents": {
     "state": {
+     "completed": "concluído",
      "working": "trabalhando",
      "idle": "ocioso",
      "failed": "falhou",
      "stopped": "parado",
-     "failedCount": "{{value0}} falhou"
-    }
+     "unverifiable": "não verificável",
+     "workingCount": "{{value0}} trabalhando",
+     "idleCount": "{{value0}} ocioso",
+     "failedCount": "{{value0}} falhou",
+     "stoppedCount": "{{value0}} interrompido",
+     "unverifiableCount": "{{value0}} não verificável"
+    },
+    "startedOne": "Iniciou 1 subagente",
+    "startedN": "Iniciou {{value0}} subagentes",
+    "ranOne": "Executou 1 subagente",
+    "ranN": "Executou {{value0}} subagentes",
+    "tokens": "{{value0}} tokens",
+    "unnamed": "Subagente"
+   },
+   "conversationCommand": {
+    "pendingWork": "Espere o trabalho e as mensagens pendentes terminarem antes de usar este comando."
+   },
+   "drop": {
+    "title": "Solte para anexar a este chat",
+    "subtitle": "Os arquivos são adicionados à sua mensagem como caminhos que o agente pode ler."
    },
    "copyCode": "Copiar código",
+   "goal": {
+    "placeholder": "Descreva seu objetivo, defina resultados mensuráveis para melhores resultados",
+    "clear": "Limpar objetivo",
+    "chip": "Objetivo",
+    "exitMode": "Sair do modo de objetivo",
+    "sentAsGoal": "Enviado como objetivo",
+    "collapse": "Ocultar objetivo completo",
+    "expand": "Mostrar objetivo completo",
+    "pause": "Pausar objetivo",
+    "resume": "Retomar objetivo",
+    "pursuing": "Perseguindo objetivo",
+    "paused": "Objetivo pausado",
+    "blocked": "Objetivo bloqueado",
+    "limited": "Objetivo limitado",
+    "attachmentsUnsupported": "Remova os anexos antes de definir um objetivo."
+   },
    "fileLinks": {
-    "notFound": "Arquivo não encontrado: {{value0}}"
+    "notFound": "Arquivo não encontrado: {{value0}}",
+    "unverifiable": "Não foi possível verificar {{value0}}: {{value1}}",
+    "unresolved": "Não foi possível resolver {{value0}} neste workspace"
    },
    "contextUsage": {
-    "title": "Contexto"
+    "label": "Contexto {{used}} de {{window}} tokens, {{percent}}% usado",
+    "title": "Contexto",
+    "estimated": "Estimado a partir da última resposta."
+   },
+   "contextMenu": {
+    "copyOrcaSessionId": "Copiar ID da sessão do Orca",
+    "orcaSessionIdCopied": "ID da sessão do Orca copiado",
+    "orcaSessionIdCopyFailed": "Não foi possível copiar o ID da sessão do Orca",
+    "orcaSessionIdTooltip": "O ID do Orca para este chat, separado do próprio ID de sessão da CLI do agente. Os agentes usam ele para se referirem uns aos outros pelo Orca."
    },
    "dismissDeliveryNotice": "Dispensar",
+   "messageNotSent": "Mensagem não enviada",
+   "deliveryUnconfirmed": "Entrega não confirmada — verifique o chat antes de tentar de novo",
    "queuedMessages": {
+    "behindReturnedHold": "Aguardando — uma mensagem acima precisa de atenção",
+    "awaitingAnswerHold": "Aguardando sua resposta",
+    "steer": "Direcionar",
     "send": "Enviar",
+    "steerHint": "Enviar sem interromper o modelo",
+    "sendHint": "Enviar esta mensagem agora",
     "delete": "Excluir",
     "moreActions": "Mais ações",
+    "editMessage": "Editar mensagem",
+    "turnOffQueueing": "Desativar enfileiramento",
+    "listLabel": "Mensagens na fila",
+    "alreadySent": "Esta mensagem já foi enviada.",
+    "editAlreadySent": "Já enviada — seu texto ainda está no compositor.",
+    "withdrawnHold": "Interrompida antes de ser enviada",
+    "pausedSendFailed": "Não foi possível enviar — pressione Enviar para tentar novamente.",
     "paused": "Pausada",
+    "queuePausedStopped": "Fila pausada porque você interrompeu",
+    "queuePausedRestarted": "Fila pausada porque o Orca reiniciou",
+    "queuePausedCleared": "Fila pausada depois que você limpou a conversa",
+    "queuePaused": "Fila pausada",
     "resume": "Retomar"
    }
   },
@@ -17359,32 +17813,76 @@
      "measureSizes": "Escanear",
      "measureSizesTitle": "Escanear tamanhos dos workspaces",
      "measureSizesDescription": "Escaneia o uso de disco para comparar, ordenar e filtrar workspaces por tamanho.",
+     "sizeOnDisk": "Tamanho em disco: {{value0}}",
+     "checkingGitRow": "Verificando o status do Git",
+     "searchPlaceholder": "Buscar nome, repo, branch, caminho, host",
      "searchLabel": "Buscar workspaces",
      "filters": "Filtros",
+     "showingCount": "Mostrando {{value0}} de {{value1}}",
      "clearFilters": "Limpar filtros",
+     "checkingGit": "Verificando o status do Git: faltam {{value0}}",
      "facet": {
       "git": "Git",
       "review": "Revisar",
+      "ticket": "Tickets",
       "location": "Local",
+      "safety": "Segurança",
       "activity": "Atividade",
+      "size": "Tamanho em disco",
       "status": "Status do workspace",
-      "agent": "Agente"
+      "agent": "Agente",
+      "context": "Contexto local"
      },
+     "minAhead": "Commits à frente ≥",
+     "minBehind": "Commits atrás ≥",
+     "branchQuery": "Branch contém",
+     "prunable": "Prunável",
+     "locked": "Bloqueado",
+     "reviewPresence": "PR / MR",
+     "reviewProvider": "Provedor",
+     "ticketPresence": "Ticket vinculado",
      "host": "Host",
      "repo": "Repositório",
+     "pathPrefix": "Caminho começa com",
      "tier": {
       "ready": "Pronto",
-      "review": "Precisa de revisão"
+      "review": "Precisa de revisão",
+      "protected": "Protegido"
      },
+     "blockerMode": "Correspondência de bloqueio",
+     "blockerModeAny": "Tem algum",
+     "blockerModeNone": "Não tem nenhum",
+     "blockers": "Bloqueios",
      "dismissed": "Ignorado",
+     "selectableOnly": "Somente workspaces que posso excluir agora",
+     "idleSignal": {
+      "lastVisited": "Não aberto",
+      "lastActivity": "Sem atividade",
+      "created": "Criado antes de"
+     },
+     "idleMinDays": "Ocioso por pelo menos",
+     "days": "dias",
+     "neverVisited": "Nunca aberto",
+     "minSize": "Pelo menos",
+     "maxSize": "No máximo",
+     "includeUnsized": "Incluir workspaces não medidos",
+     "matchStatusless": "Incluir workspaces sem status",
      "archived": "Arquivado",
      "pinned": "Fixados",
      "unread": "Não lida",
+     "comment": "Tem comentário",
+     "retainedDoneAgents": "Transcrições de agentes concluídos",
+     "contextPresence": "Abas, terminais, comentários",
+     "completelyEmpty": "Nada mais a perder",
      "noWorkspaces": "Nenhum workspace encontrado.",
      "noMatches": "Nenhum workspace corresponde a esses filtros.",
+     "noMatchesDescription": "Todo workspace está em uma única lista — amplie uma faceta ou limpe os filtros.",
+     "selectAll": "Selecionar todos os workspaces correspondentes",
      "sortBy": "Ordenar por",
      "sortByField": "Ordenar por {{value0}}",
      "sort": {
+      "lastActivity": "Última atividade",
+      "lastVisited": "Última abertura",
       "created": "Criada",
       "size": "Tamanho",
       "name": "Workspace",
@@ -17394,16 +17892,24 @@
       "workspaceStatus": "Status",
       "agent": "Agente",
       "git": "Git",
+      "ahead": "À frente",
       "behind": "Atrás",
       "branch": "Branch",
-      "review": "Revisar"
+      "review": "Revisar",
+      "ticket": "Ticket",
+      "localContext": "Contexto aberto",
+      "tier": "Segurança",
+      "blockerCount": "Bloqueios"
      },
      "git": {
+      "clean": "Limpo",
       "dirty": "Alterações não commitadas",
-      "unpushed": "Commits não enviados"
+      "unpushed": "Commits não enviados",
+      "unknown": "Não verificado"
      },
      "agent": {
       "working": "Trabalhando",
+      "permission": "Aguardando você",
       "idle": "Ocioso"
      },
      "review": {
@@ -17419,37 +17925,104 @@
       "linear": "Linear",
       "issue": "Issue"
      },
+     "triState": {
+      "any": "Qualquer",
+      "only": "Somente",
+      "exclude": "Excluir"
+     },
+     "presence": {
+      "any": "Qualquer",
+      "some": "Tem uma",
+      "none": "Não tem nenhum"
+     },
+     "tierField": "Nível de limpeza",
+     "idleSignalField": "Sinal de inatividade",
+     "selectionVanishedOne": "1 workspace selecionado não existe mais.",
+     "selectionVanished": "{{value0}} workspaces selecionados não existem mais.",
      "updatedAgo": "Atualizado {{value0}}",
      "refreshing": "Atualizando…",
+     "refreshingProgress": "Atualizando {{value0}}/{{value1}}",
+     "notMeasured": "Não medido",
      "openWorkspaceNamed": "Abrir {{value0}}",
      "openWorkspace": "Abrir workspace",
+     "workspaceStatus": "Status do workspace: {{value0}}",
+     "measuringSizesProgress": "Verificando {{value0}}/{{value1}}",
+     "measuringSizes": "Verificando tamanhos",
+     "measureSizesFailed": "Não foi possível verificar os tamanhos dos workspaces",
      "selectedCount": "{{value0}} selecionadas",
+     "gitStatusCheckFailed": "Falha na verificação do status do Git",
+     "gitStatusUnverified": "Não foi possível verificar o status do Git",
+     "deleteAnyway": "Excluir mesmo assim",
+     "forceDeleteProjectionOne": "{{count}} workspace agora apresenta risco e pode precisar de uma exclusão forçada",
+     "forceDeleteProjectionMany": "{{count}} workspaces agora apresentam risco e podem precisar de uma exclusão forçada",
+     "selectionWithheldOne": "1 workspace selecionado está oculto pelos filtros atuais e foi desmarcado.",
+     "selectionWithheld": "{{value0}} workspaces selecionados estão ocultos pelos filtros atuais e foram desmarcados.",
+     "selectAllCountOne": "Selecionar 1 workspace verificado quanto à segurança",
+     "selectAllCount": "Selecionar todos os {{value0}} workspaces verificados quanto à segurança",
+     "appliedFilters": "Filtros aplicados",
      "removeFilter": "Remover filtro {{value0}}",
      "chip": {
+      "idleDays": "Ocioso há {{value0}}d+",
+      "neverVisited": "Nunca visitado",
+      "minSize": "No mínimo {{value0}} MB",
+      "maxSize": "No máximo {{value0}} MB",
+      "excludesUnsized": "Somente medido",
+      "excludesStatusless": "Tem status",
       "list": "{{value0}}: {{value1}}",
       "triState": "{{value0}}: {{value1}}",
+      "only": "Somente",
+      "exclude": "Excluído",
+      "minAhead": "À frente {{value0}}+",
+      "minBehind": "Atrás {{value0}}+",
+      "branchQuery": "Branch: {{value0}}",
+      "pathPrefix": "Caminho: {{value0}}",
       "presence": "{{value0}}: {{value1}}",
+      "has": "Tem",
       "none": "Nenhum",
+      "completelyEmpty": "Nada a perder",
+      "selectableOnly": "Somente excluível",
       "kind": {
        "status": "Status",
        "agent": "Agente",
        "git": "Git",
        "review": "Revisar",
+       "reviewState": "Status da revisão",
+       "reviewProvider": "Provedor",
+       "ticket": "Ticket",
+       "ticketSource": "Fonte do ticket",
        "context": "Contexto",
        "host": "Host",
        "repo": "Repo",
+       "blocker": "Bloqueio",
+       "tier": "Segurança",
        "dismissed": "Ignorado",
        "archived": "Arquivado",
        "pinned": "Fixados",
        "unread": "Não lida",
-       "comment": "Comentário"
+       "comment": "Comentário",
+       "prunable": "Prunável",
+       "locked": "Bloqueado",
+       "retainedAgents": "Agentes concluídos"
       }
      }
     },
     "scan": {
-     "noWorkspaces": "Nenhum workspace encontrado."
+     "progress": "Verificando workspaces ({{value0}}/{{value1}})",
+     "singleError": "Não foi possível verificar {{value0}}: {{value1}}. Alguns workspaces podem estar faltando. Atualize para tentar de novo.",
+     "moreErrors": ", +{{value0}} mais",
+     "multipleErrors": "Não foi possível verificar {{value0}} repositórios ({{value1}}{{value2}}). Alguns workspaces podem estar faltando. Atualize para tentar de novo.",
+     "noWorkspaces": "Nenhum workspace encontrado.",
+     "readyOneOne": "1 workspace encontrado, com 1 sugestão de limpeza.",
+     "readyOneMany": "1 workspace encontrado, com {{value0}} sugestões de limpeza.",
+     "readyManyOne": "{{value0}} workspaces encontrados, com 1 sugestão de limpeza.",
+     "readyManyMany": "{{value0}} workspaces encontrados, com {{value1}} sugestões de limpeza.",
+     "fallbackRepository": "um repositório",
+     "gitListFailed": "Git não conseguiu listar worktrees",
+     "readyOne": "1 workspace encontrado.",
+     "readyMany": "{{value0}} workspaces encontrados."
     },
     "relativeTime": {
+     "never": "Nunca",
      "justNow": "Agora mesmo",
      "minutesAgo": "há {{value0}}min",
      "hoursAgo": "há {{value0}}h",
@@ -17457,10 +18030,14 @@
     },
     "host": {
      "label": "Host: {{value0}}",
+     "unknown": "Host desconhecido",
      "candidateName": "{{value0}} em {{value1}}"
     }
    },
    "creation": {
+    "worktreeReadyToast": "Worktree {{name}} está pronto",
+    "workspaceReadyToast": "Workspace {{name}} está pronto",
+    "goToWorktree": "Ir para o worktree",
     "goToWorkspace": "Ir para o workspace"
    }
   },
@@ -17488,6 +18065,7 @@
    "agentUnavailable": "{{agent}} não foi detectado neste host do workspace.",
    "sent": "Contexto da sessão enviado para {{agent}} em uma nova sessão.",
    "deliveryFailed": "A nova sessão do {{agent}} foi iniciada, mas o contexto não pôde ser enviado.",
+   "deliveryUnconfirmed": "O Orca não conseguiu confirmar que o {{agent}} recebeu o contexto da sessão. Verifique a nova sessão e cole o conteúdo você mesmo se a entrada dela estiver vazia.",
    "copyPrompt": "Copiar prompt",
    "launchFailed": "Não foi possível iniciar uma nova sessão do {{agent}}."
   },
@@ -17501,22 +18079,43 @@
   "cmd-j": {
    "paletteSessionAge": {
     "minutes": "{{value0}}min",
+    "hours": "{{value0}}h",
+    "days": "{{value0}}d",
     "underOneMinute": "<1min"
    }
   },
   "terminalPane": {
    "TerminalContextMenu": {
-    "copySessionId": "Copiar ID da sessão"
+    "copySessionId": "Copiar ID da sessão",
+    "copySessionIdSuccess": "ID da sessão copiado",
+    "copySessionIdError": "Não foi possível copiar o ID da sessão"
    }
   },
   "settings": {
+   "TerminalInteraction": {
+    "copyTrimsGutter": "Recortar o gutter ao copiar",
+    "copyTrimsGutterDescription": "Descarte a gutter da esquerda, atrás da qual a saída do agente é desenhada, para que o texto copiado não fique indentado. Somente o recuo que todas as linhas selecionadas compartilham é removido."
+   },
    "terminal": {
     "clipboard": {
      "search": {
-      "margin": "margem"
+      "gutter": "gutter",
+      "indent": "indent",
+      "margin": "margem",
+      "leading": "leading",
+      "whitespace": "whitespace",
+      "spaces": "spaces"
      }
     }
+   },
+   "nativeChat": {
+    "queueFollowUpsTitle": "Fila de mensagens de acompanhamento",
+    "queueFollowUpsCopy": "Mensagens que você envia enquanto o agente trabalha esperam como cards que você pode direcionar, editar ou excluir. Mensagens com imagens são enviadas na hora.",
+    "queueFollowUpsToggleLabel": "Alternar fila de mensagens de acompanhamento"
    }
+  },
+  "agentChildRow": {
+   "ended": "Encerrado"
   }
  },
  "dashboardPopout": {
@@ -17716,8 +18315,23 @@
  },
  "rendererRecovery": {
   "reload": "Recarregar",
+  "copyCommands": "Copiar comandos",
   "quit": "Encerrar",
-  "tryAgain": "Tentar novamente"
+  "stalledDetail": "O Orca recarregou a janela depois de uma falha, mas o carregamento nunca terminou.",
+  "crashLoopDetail": "O Orca tentou recuperar {{recoveryCount}} vezes seguidas sem sucesso.",
+  "driverFallback": "Se isso não ajudar, a causa costuma ser o driver gráfico.",
+  "genericDetail": "Isso costuma ser um problema de driver gráfico ou de instalação. Recarregue para tentar de novo, ou saia e abra o Orca novamente.",
+  "title": "O Orca continua falhando ao carregar",
+  "stalledMessage": "A janela do app parou de responder ao recarregar depois de uma falha.",
+  "crashLoopMessage": "A janela do app travou várias vezes e parou de recarregar automaticamente.",
+  "lowCommitMessage": "O Windows está sem memória.",
+  "lowCommitDetail": "O Windows tem apenas {{availableMB}} MB de memória livres para apps, então a janela ficou sem memória de novo depois de recarregar.",
+  "lowCommitAdvice": "Libere memória fechando apps não usados ou workspaces do Orca, ou aumente o tamanho do arquivo de página do Windows e clique em Recarregar.",
+  "tryAgain": "Tentar novamente",
+  "launchFailedMessage": "O Orca não conseguiu iniciar o processo que desenha a janela dele.",
+  "launchFailedDetail": "O Orca tentou de novo {{recoveryCount}} vezes sem sucesso.",
+  "processLimitDetail": "O sistema recusou criar um novo processo porque sua conta de usuário atingiu o limite de processos. Isso costuma ser causado por terminais, servidores de dev ou agentes fora de controle. Feche alguns deles e clique em Tentar novamente.",
+  "launchFailedGenericDetail": "O sistema recusou iniciá-lo. Libere memória ou feche outros apps e clique em Tentar novamente. Se continuar acontecendo, reinstale o Orca."
  },
  "notifications": {
   "agentStatus": {
@@ -17801,6 +18415,13 @@
    "openInSidebarCopy": "Digite o que você lembra, ou peça a um agente: \"encontre a sessão em que corrigimos o tempo limite de login\".",
    "open": "Abrir",
    "enableOnAll": "Ativar em todos os computadores"
+  }
+ },
+ "aiVault": {
+  "subagents": {
+   "loading": "Carregando subagentes…",
+   "loadError": "Não foi possível carregar todos os subagentes.",
+   "empty": "Nenhum subagente encontrado."
   }
  },
  "common": {
