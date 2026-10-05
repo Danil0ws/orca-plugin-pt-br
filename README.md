@@ -16,7 +16,7 @@ cobertura atual: 14.272/15.007 (95%)**
 **1) Git URL** — Settings → Plugins → Install plugin → Git URL (`#ref` obrigatório):
 
 ```
-https://github.com/Danil0ws/orca-plugin-pt-br.git#1.0.1
+https://github.com/Danil0ws/orca-plugin-pt-br.git#1.0.2
 ```
 
 **2) Desenvolvimento local:**

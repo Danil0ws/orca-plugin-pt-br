@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.0.2 — 2026-10-05
+
+- **Backlog de terminologia zerado**: 36 pares corrigidos em 12 dicionários.
+  - 14 avisos de glossário → 0: termos `workspace`, `commit` e `worktree`
+    que a tradução descartava (ex.: "área de trabalho", "commitar") e 2
+    valores trocados em `by-key.json` (`Go to Worktree` ↔
+    `Workspace unavailable`).
+  - Sufixo de plural inglês removido de 25 chaves (aparecia como
+    `etiquetas: 3s`): `sufixos de plural: 26 descartados · 0 mantidos`.
+  - Gate: `test_build.py` 10 casos OK · divergências de placeholder: 0 ·
+    avisos de glossário: 0.
+- `version` 1.0.1 → 1.0.2; `locales/pt-BR.json` regenerado; instalação
+  pinada em `#1.0.2`.
+- Pendências restantes: `system=553` (539 textos), cobertura 95%.
+
 ## 1.0.1 — 2026-10-05
 
 - **Manifesto corrigido** (a 1.0.0 era recusada pela Orca):
